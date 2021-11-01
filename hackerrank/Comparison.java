@@ -27,6 +27,5 @@ public class Comparison {
         for (int i = 0; i < n; i++) {
             System.out.println(s1[i]);
         }
-
     }
 }
