@@ -38,7 +38,7 @@ public class PredicateDemo {
                 .and((c2) -> c2.getAge() < 4)
                 .or((c3) -> c3.getName().length() < 34)
                 .or((c4) -> c4.getCountry().equalsIgnoreCase("Nigeria"))
-                .or(((c5) -> c5.getName().isBlank()));
+                .or(((c5) -> c5.getName().isEmpty()));
 
         Predicate isEqualPredicate = Predicate.isEqual(person);
 
