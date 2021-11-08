@@ -22,4 +22,25 @@ public class Person {
     public String getCountry(){
         return country;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", country='" + country + '\'' +
+                '}';
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
