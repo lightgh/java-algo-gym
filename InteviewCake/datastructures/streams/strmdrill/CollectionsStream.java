@@ -153,6 +153,82 @@ public class CollectionsStream {
         System.out.println("EmployeeMapPartition");
         System.out.println(employeeMapPartition);
 
+        Iterator<Employee> empIterator = employeeDatabase.iterator();
+
+        empIterator.forEachRemaining((eachFruit) -> System.out.println(eachFruit));
+
+        Map<String, Integer> fruits = new HashMap<>();
+        fruits.put("apple", 34);
+
+        if(fruits.containsKey("banana")){
+            fruits.put("banana", fruits.get("banana") + 20);
+        }else{
+            fruits.put("banana", 20);
+        }
+
+        System.out.println(fruits.get("banana"));
+
+        fruits.put("banana", fruits.getOrDefault("banana", 0) + 20);
+
+        fruits.putIfAbsent("apple", 30);
+
+        System.out.println(fruits.get("apple"));
+
+        Map<String, Integer> fruits2 = new HashMap<>();
+        fruits2.put("apple", 20);
+
+        Integer val = fruits2.compute("apple", (k, v) -> v + 10 );
+
+        System.out.println("VAL-FRUITS: " + val);
+
+        val = fruits2.computeIfAbsent("banana", (v) -> 10);
+
+        System.out.println("NEW-VAL-FRUITS: " + val);
+
+        val = fruits2.computeIfPresent("apple", (k, v) -> v + 45);
+
+        System.out.println("IfPresentVal- Val: " + val );
+
+        val = fruits2.computeIfPresent("apple3", (k, v) -> v + 90);
+
+        System.out.println(val);
+
+        System.out.println("Each Remaining Value: ");
+        fruits2.entrySet().iterator().forEachRemaining(eachv ->
+                System.out.println(eachv));
+
+        fruits2.replace("banana", 20);
+        fruits2.replace("apple", 20);
+
+        fruits2.replace("apple", 50);
+
+        System.out.println("After Replacement:");
+        fruits2.entrySet().iterator().forEachRemaining(eV ->
+                System.out.println(eV));
+
+        fruits2.replace("apple", 50, 90);
+
+        fruits2.entrySet().iterator().forEachRemaining(wV ->
+                System.out.println(wV));
+
+        fruits2.replaceAll((k, v) -> {
+            if(v % 20 == 0)
+                return 88;
+            return v;
+        });
+
+        fruits2.entrySet().iterator().forEachRemaining(eVal ->
+                System.out.println(eVal));
+
+
+
+
+
+
+
+
+
+
 
 
     }
