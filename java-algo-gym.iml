@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/InteviewCake" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/hackerrank" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/leetcode" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SortingSearching" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

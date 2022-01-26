@@ -26,6 +26,8 @@ public class ComplexityEstimation {
 
         System.out.println(LocalDate.now().plusDays(noOfDaysLeft).toString());
 
+        System.out.println();
+
     }
 
     public static String ordinal(int i) {
