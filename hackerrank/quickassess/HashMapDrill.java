@@ -93,5 +93,56 @@ public class HashMapDrill {
 
         System.out.println("stockPrice.isEmpty() = " + stockPrice.isEmpty());
 
+        EmpPeople empP1 = new EmpPeople("Cynthia", 4500);
+        EmpPeople empP2 = new EmpPeople("Rejoice", 4500);
+
+        Map<EmpPeople, Integer> empPeopleIntegerMap = new HashMap<>();
+        empPeopleIntegerMap.put(empP1, 6700);
+        empPeopleIntegerMap.put(empP2, 7000);
+
+        empP1.name = "Anderson";
+
+        System.out.println("empPeopleIntegerMap.get(empP1) = " + empPeopleIntegerMap.get(empP1));
+        System.out.println("empPeopleIntegerMap.get(empP2) = " + empPeopleIntegerMap.get(empP2));
+
+
+
+    }
+}
+
+class EmpPeople {
+    String name;
+    int empId;
+
+    public EmpPeople(String empName, int empId ){
+        this.empId = empId;
+        this.name = empName;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getEmpId() {
+        return empId;
+    }
+
+    /**
+     * the Fields used in calculating hascode should be immutable or the class should be immutable
+     * if you intent using an object as hashMap key.
+     * Overriding hashCode and equals is important
+     * @return
+     */
+    public int hashCode(){
+        int prime = 31;
+        int result = 1;
+        result = prime * result + empId;
+        result = prime * result + (name == null? 0 : name.hashCode());
+        return result;
+    }
+
+    public boolean equals(Object obj){
+        EmpPeople emp = (EmpPeople) obj;
+        return (emp.empId == this.empId);
     }
 }
