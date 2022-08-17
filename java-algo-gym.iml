@@ -7,6 +7,9 @@
       <sourceFolder url="file://$MODULE_DIR$/hackerrank" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/leetcode" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SortingSearching" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/codingpatterns" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/multithreading" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DrillsSamples" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

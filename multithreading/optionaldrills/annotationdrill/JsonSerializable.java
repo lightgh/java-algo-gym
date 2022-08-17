@@ -6,9 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.FIELD)
-public @interface JsonElement {
-    public String key() default "";
-
-//    public String key2() default "key2";
+@Target(ElementType.TYPE)
+public @interface JsonSerializable {
+//    public String key() default "";
 }

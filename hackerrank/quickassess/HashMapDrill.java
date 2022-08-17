@@ -105,6 +105,9 @@ public class HashMapDrill {
         System.out.println("empPeopleIntegerMap.get(empP1) = " + empPeopleIntegerMap.get(empP1));
         System.out.println("empPeopleIntegerMap.get(empP2) = " + empPeopleIntegerMap.get(empP2));
 
+        System.out.println("sample text in java");
+        System.out.println("\"sample text in java\".indexOf(\"va\") = " + "sample text in java".indexOf("s"));
+
 
 
     }

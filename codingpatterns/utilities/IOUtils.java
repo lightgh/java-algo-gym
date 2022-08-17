@@ -1,2 +1,5 @@
-package utilities;public class InputUtilities {
+package utilities;
+
+public class IOUtils {
+
 }
