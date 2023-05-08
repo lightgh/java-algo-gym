@@ -87,4 +87,9 @@ public class Solution2 {
 
         System.out.println("outcome = " + outcome);
     }
+
+    public static void consH(){
+
+    }
+
 }
