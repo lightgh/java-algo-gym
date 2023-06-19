@@ -1,5 +1,8 @@
+package leetcode.solutionpack;
+import java.util.Arrays;
+
 //Leetcode Day2
-class Anagram {
+public class Anagram {
     public boolean isAnagram(String s, String t) {
         String[] fString = s.split("");
         String[] sString = t.split("");
@@ -14,7 +17,7 @@ class Anagram {
             return false;
         }
         
-        for(int i = 0; i < sLength; i ++){
+        for(int i = 0; i < sLength; i++){
             if(!fString[i].equals(sString[i])){
                 return false;
             }

@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 //Leetcode Day 1
 class DuplicateCheck {
     public boolean containsDuplicate(int[] nums) {
