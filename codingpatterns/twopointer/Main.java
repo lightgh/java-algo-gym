@@ -14,7 +14,6 @@ public class Main {
         int [] n = {2, 5, 3, 4};
 
 
-
         for(int i = 0; i < inputArrayData.length; i++){
             LinkedList<Integer> linkedList = new LinkedList<Integer>();
             linkedList.createLinkedList(inputArrayData[i]);
@@ -23,7 +22,7 @@ public class Main {
             System.out.println("\nafter removing element at " + n[i] + " th position from the end of the list");
             RemoveNthNode.removeNthLastNode(linkedList.head, n[i]);
             PrintList.printListsWithForwardArrow(linkedList.head);
-            System.out.printf("\n");
+            System.out.print("\n");
         }
 
     }
