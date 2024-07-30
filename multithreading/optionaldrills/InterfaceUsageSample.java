@@ -14,10 +14,10 @@ public interface InterfaceUsageSample {
         readInputStep2();
     }
 
-    private void readInputStep1(){
+    default void readInputStep1(){
         System.out.println("Inside readInputStep1");
     }
-    private void readInputStep2(){
+    default void readInputStep2(){
         System.out.println("Inside readInputStep2");
     }
 
